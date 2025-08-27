@@ -1,0 +1,34 @@
+{
+  "name": "salon-revenue-calculator",
+  "version": "1.0.0",
+  "description": "AI-Powered Salon Revenue Recovery Calculator built with Astro",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "build:prod": "NODE_ENV=production astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "lighthouse": "npx lighthouse http://localhost:4321 --output-path=./lighthouse-report.html --save-assets --view",
+    "audit": "npm run build && npm run preview & sleep 3 && npm run lighthouse; kill %1"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.2"
+  },
+  "keywords": [
+    "astro",
+    "salon",
+    "calculator",
+    "revenue",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC"
+}

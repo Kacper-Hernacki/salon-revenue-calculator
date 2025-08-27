@@ -1,0 +1,76 @@
+---
+export interface Props {
+  content: string;
+  class?: string;
+}
+
+const { content, class: className = '' } = Astro.props;
+---
+
+<div class={`tooltip-container ${className}`}>
+  <slot />
+  <div class="tooltip-content">
+    <div class="tooltip-text">{content}</div>
+    <div class="tooltip-arrow"></div>
+  </div>
+</div>
+
+<style>
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-content {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1F2937;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 250px;
+    white-space: normal;
+  }
+
+  .tooltip-arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #1F2937;
+  }
+
+  .tooltip-container:hover .tooltip-content {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .tooltip-content {
+      max-width: 200px;
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  }
+
+  /* RTL support */
+  [dir="rtl"] .tooltip-content {
+    left: 50%;
+    right: auto;
+  }
+</style>

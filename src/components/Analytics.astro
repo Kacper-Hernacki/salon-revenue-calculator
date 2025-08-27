@@ -1,0 +1,170 @@
+---
+// Analytics component with performance monitoring
+const isDev = import.meta.env.DEV;
+const GA_ID = import.meta.env.PUBLIC_GA_ID || 'G-XXXXXXXXXX';
+const GTM_ID = import.meta.env.PUBLIC_GTM_ID;
+---
+
+{!isDev && (
+  <>
+    <!-- Google Analytics 4 -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+    <script is:inline define:vars={{ GA_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', GA_ID, {
+        send_page_view: true,
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+      
+      // Enhanced ecommerce tracking
+      gtag('config', GA_ID, {
+        custom_map: {
+          'custom_parameter_1': 'revenue_potential',
+          'custom_parameter_2': 'client_count'
+        }
+      });
+    </script>
+
+    {GTM_ID && (
+      <>
+        <!-- Google Tag Manager -->
+        <script is:inline define:vars={{ GTM_ID }}>
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', GTM_ID);
+        </script>
+      </>
+    )}
+
+    <!-- Hotjar Tracking Code (optional) -->
+    {import.meta.env.PUBLIC_HOTJAR_ID && (
+      <script is:inline define:vars={{ HOTJAR_ID: import.meta.env.PUBLIC_HOTJAR_ID }}>
+        (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:HOTJAR_ID,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+    )}
+
+    <!-- Web Vitals Tracking -->
+    <script is:inline>
+      // Track Core Web Vitals
+      if (typeof window !== 'undefined') {
+        import('https://unpkg.com/web-vitals@3?module').then(function(webVitals) {
+          var onCLS = webVitals.onCLS;
+          var onFCP = webVitals.onFCP;
+          var onFID = webVitals.onFID;
+          var onLCP = webVitals.onLCP;
+          var onTTFB = webVitals.onTTFB;
+          
+          function sendToAnalytics(metric) {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', metric.name, {
+                event_category: 'Web Vitals',
+                event_label: metric.id,
+                value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+                non_interaction: true,
+              });
+            }
+          }
+
+          onCLS(sendToAnalytics);
+          onFCP(sendToAnalytics);
+          onFID(sendToAnalytics);
+          onLCP(sendToAnalytics);
+          onTTFB(sendToAnalytics);
+        }).catch(function(err) {
+          console.warn('Web Vitals could not be loaded', err);
+        });
+      }
+    </script>
+
+    <!-- Error Tracking -->
+    <script is:inline>
+      // Global error tracking
+      window.addEventListener('error', function(e) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exception', {
+            description: e.error?.message || 'Unknown error',
+            fatal: false,
+            error_type: 'javascript_error',
+            error_location: e.filename + ':' + e.lineno
+          });
+        }
+      });
+
+      // Unhandled promise rejection tracking
+      window.addEventListener('unhandledrejection', function(e) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exception', {
+            description: e.reason?.message || 'Unhandled promise rejection',
+            fatal: false,
+            error_type: 'promise_rejection'
+          });
+        }
+      });
+    </script>
+
+    <!-- Performance Observer -->
+    <script is:inline>
+      // Track long tasks
+      if ('PerformanceObserver' in window) {
+        try {
+          const observer = new PerformanceObserver((list) => {
+            for (const entry of list.getEntries()) {
+              if (entry.entryType === 'longtask') {
+                gtag('event', 'long_task', {
+                  event_category: 'Performance',
+                  event_label: 'Long Task',
+                  value: Math.round(entry.duration),
+                  non_interaction: true
+                });
+              }
+            }
+          });
+          observer.observe({ entryTypes: ['longtask'] });
+        } catch (e) {
+          // PerformanceObserver not supported or failed
+        }
+      }
+
+      // Track resource loading times
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const navigation = performance.getEntriesByType('navigation')[0];
+          if (navigation) {
+            gtag('event', 'page_load_time', {
+              event_category: 'Performance',
+              event_label: 'Full Page Load',
+              value: Math.round(navigation.loadEventEnd - navigation.fetchStart),
+              non_interaction: true
+            });
+          }
+        }, 100);
+      });
+    </script>
+  </>
+)}
+
+{GTM_ID && !isDev && (
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe 
+      src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+      height="0" 
+      width="0" 
+      style="display:none;visibility:hidden"
+      title="Google Tag Manager"
+    ></iframe>
+  </noscript>
+)}
