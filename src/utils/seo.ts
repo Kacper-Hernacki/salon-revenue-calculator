@@ -16,7 +16,7 @@ export interface SEOConfig {
 }
 
 // SEO keywords by language for better targeting
-export const seoKeywords = {
+export const seoKeywords: Record<Lang, string[]> = {
   en: [
     'salon revenue calculator',
     'beauty salon rebooking',
@@ -143,7 +143,7 @@ export const seoKeywords = {
     'ビューティーサロンROI',
     'サロン収益回復'
   ]
-} as const;
+};
 
 // Generate structured data for better SEO
 export function generateStructuredData(lang: Lang, url: string): object {
@@ -213,8 +213,10 @@ export function generateStructuredData(lang: Lang, url: string): object {
 }
 
 // Localized text for structured data
-function getLocalizedText(lang: Lang, key: string): string {
-  const texts = {
+type TextKeys = 'appName' | 'appDescription' | 'feature1' | 'feature2' | 'feature3' | 'orgDescription' | 'siteName' | 'siteDescription' | 'calculatorName' | 'calculatorDescription';
+
+function getLocalizedText(lang: Lang, key: TextKeys): string {
+  const texts: Record<Lang, Record<TextKeys, string>> = {
     en: {
       appName: 'Salon Revenue Recovery Calculator',
       appDescription: 'AI-powered calculator to discover hidden revenue potential in your salon business',
@@ -325,11 +327,11 @@ function getLocalizedText(lang: Lang, key: string): string {
     }
   };
 
-  return texts[lang]?.[key] || texts.en[key] || '';
+  return texts[lang][key] || texts.en[key] || '';
 }
 
 // Generate meta robots tag based on language and environment
-export function generateRobotsTag(lang: Lang, isDevelopment: boolean = false): string {
+export function generateRobotsTag(isDevelopment: boolean = false): string {
   if (isDevelopment) {
     return 'noindex, nofollow';
   }
@@ -360,7 +362,7 @@ export function getSEOConfig(lang: Lang, path: string, baseUrl?: string): SEOCon
     description: getLocalizedText(lang, 'appDescription'),
     keywords: seoKeywords[lang] || seoKeywords.en,
     canonical,
-    robots: generateRobotsTag(lang, isDev),
+    robots: generateRobotsTag(isDev),
     ogTitle: getLocalizedText(lang, 'appName'),
     ogDescription: getLocalizedText(lang, 'appDescription'),
     ogImage: '/og-image.png',
