@@ -432,9 +432,9 @@ const description = t('page.description');
 
   .calculator-container {
     background: white;
-    border-radius: 24px;
+    border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
+    max-width: 700px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -467,7 +467,7 @@ const description = t('page.description');
 
   .header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    padding: 40px;
+    padding: 30px 24px;
     text-align: center;
     color: white;
     position: relative;
@@ -481,31 +481,31 @@ const description = t('page.description');
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     backdrop-filter: blur(10px);
   }
 
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
+    font-size: 2rem;
+    margin-bottom: 12px;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   .subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0.95;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   .calculator-body {
-    padding: 40px;
+    padding: 30px 24px;
   }
 
   .input-group {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;
   }
@@ -814,12 +814,25 @@ const description = t('page.description');
   }
 
   @media (max-width: 768px) {
+    .calculator-container {
+      max-width: 95%;
+      margin: 10px auto;
+    }
+    
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+    }
+    
+    .header {
+      padding: 24px 20px;
     }
     
     .calculator-body {
-      padding: 24px;
+      padding: 20px;
+    }
+    
+    .input-group {
+      margin-bottom: 16px;
     }
     
     .email-form {
