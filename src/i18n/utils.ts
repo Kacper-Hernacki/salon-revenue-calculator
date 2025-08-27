@@ -87,6 +87,33 @@ export function getTextDirection(lang: Lang): 'ltr' | 'rtl' {
   return rtlLangs.includes(lang) ? 'rtl' : 'ltr';
 }
 
+export function getCurrencySymbol(lang: Lang): string {
+  const currencies = {
+    en: 'USD',
+    es: 'EUR',
+    fr: 'EUR', 
+    pl: 'PLN',
+    ar: 'SAR',
+    ru: 'RUB',
+    zh: 'CNY',
+    it: 'EUR',
+    ja: 'JPY'
+  };
+
+  const symbols = {
+    USD: '$',
+    EUR: '€',
+    PLN: 'zł',
+    SAR: 'ر.س',
+    RUB: '₽',
+    CNY: '¥',
+    JPY: '¥'
+  };
+
+  const currency = currencies[lang as keyof typeof currencies] || currencies.en;
+  return symbols[currency as keyof typeof symbols] || '$';
+}
+
 export function generateAlternateLanguageLinks(currentPath: string): Array<{lang: Lang, url: string, hreflang: string}> {
   const languages = Object.keys(ui) as Lang[];
   
