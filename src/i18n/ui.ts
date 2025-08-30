@@ -152,7 +152,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Idioma',
-    'lang.current': 'Idioma actual'
+    'lang.current': 'Idioma actual',
+    
+    // Loading states
+    'loading.calculating': 'Calculando tu potencial de ingresos...',
+    'loading.analyzing': 'Analizando tus datos con IA...'
   },
   
   fr: {
@@ -228,7 +232,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Langue',
-    'lang.current': 'Langue actuelle'
+    'lang.current': 'Langue actuelle',
+    
+    // Loading states
+    'loading.calculating': 'Calcul de votre potentiel de revenus...',
+    'loading.analyzing': 'Analyse de vos données avec l\'IA...'
   },
   
   pl: {
@@ -304,7 +312,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Język',
-    'lang.current': 'Obecny język'
+    'lang.current': 'Obecny język',
+    
+    // Loading states
+    'loading.calculating': 'Obliczanie twojego potencjału przychodów...',
+    'loading.analyzing': 'Analizowanie twoich danych z AI...'
   },
   
   ar: {
@@ -380,7 +392,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'اللغة',
-    'lang.current': 'اللغة الحالية'
+    'lang.current': 'اللغة الحالية',
+    
+    // Loading states
+    'loading.calculating': 'حساب إمكانات الإيرادات الخاصة بك...',
+    'loading.analyzing': 'تحليل بياناتك باستخدام الذكاء الاصطناعي...'
   },
   
   ru: {
@@ -456,7 +472,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Язык',
-    'lang.current': 'Текущий язык'
+    'lang.current': 'Текущий язык',
+    
+    // Loading states
+    'loading.calculating': 'Рассчитываем ваш потенциал доходов...',
+    'loading.analyzing': 'Анализируем ваши данные с помощью ИИ...'
   },
   
   zh: {
@@ -532,7 +552,11 @@ export const ui = {
     
     // Language selector
     'lang.select': '语言',
-    'lang.current': '当前语言'
+    'lang.current': '当前语言',
+    
+    // Loading states
+    'loading.calculating': '计算您的收入潜力...',
+    'loading.analyzing': '使用AI分析您的数据...'
   },
   
   it: {
@@ -608,7 +632,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Lingua',
-    'lang.current': 'Lingua attuale'
+    'lang.current': 'Lingua attuale',
+    
+    // Loading states
+    'loading.calculating': 'Calcolo del tuo potenziale di ricavi...',
+    'loading.analyzing': 'Analisi dei tuoi dati con IA...'
   },
   
   ja: {
@@ -684,6 +712,10 @@ export const ui = {
     
     // Language selector
     'lang.select': '言語',
-    'lang.current': '現在の言語'
+    'lang.current': '現在の言語',
+    
+    // Loading states
+    'loading.calculating': 'あなたの収益ポテンシャルを計算中...',
+    'loading.analyzing': 'AIでデータを分析中...'
   }
 } as const;

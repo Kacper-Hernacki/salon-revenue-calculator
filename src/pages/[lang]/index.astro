@@ -280,8 +280,14 @@ const description = t('page.description');
         // Get form values
         const monthlyClients = parseFloat(document.getElementById('monthlyClients').value) || 200;
         const avgTicket = parseFloat(document.getElementById('avgTicket').value) || 75;
-        const rebookRate = parseFloat(document.getElementById('rebookRate').value) || 40;
+        const rebookRate = Math.min(100, Math.max(0, parseFloat(document.getElementById('rebookRate').value) || 40));
         // const avgVisitsYear = parseFloat(document.getElementById('avgVisitsYear').value) || 6;
+        
+        // Validation
+        if (monthlyClients <= 0 || avgTicket <= 0 || rebookRate < 0 || rebookRate > 100) {
+          alert('Please enter valid values. Rebooking rate must be between 0-100%.');
+          return;
+        }
         
         // Show loading
         loadingContainer.style.display = 'flex';
@@ -317,15 +323,15 @@ const description = t('page.description');
           const currentMonthlyRevenue = monthlyClients * avgTicket;
           
           // Calculate potential with improved rebooking
-          const idealRebookRate = 85; // Industry best practice
-          const rebookImprovement = (idealRebookRate - rebookRate) / 100;
+          const idealRebookRate = Math.max(85, rebookRate + 5); // At least 5% improvement or 85% max
+          const rebookImprovement = Math.max(0, (idealRebookRate - rebookRate) / 100);
           const additionalRebookings = monthlyClients * rebookImprovement;
-          const lostMonthlyRevenue = additionalRebookings * avgTicket;
+          const lostMonthlyRevenue = Math.max(0, additionalRebookings * avgTicket);
           const potentialMonthlyRevenue = currentMonthlyRevenue + lostMonthlyRevenue;
           
           // Annual calculations
           const annualOpportunity = lostMonthlyRevenue * 12;
-          const lostPercentage = ((lostMonthlyRevenue / potentialMonthlyRevenue) * 100).toFixed(1);
+          const lostPercentage = potentialMonthlyRevenue > 0 ? ((lostMonthlyRevenue / potentialMonthlyRevenue) * 100).toFixed(1) : '0.0';
           
           // Update display
           document.getElementById('currentRevenue').textContent = formatCurrency(currentMonthlyRevenue);
