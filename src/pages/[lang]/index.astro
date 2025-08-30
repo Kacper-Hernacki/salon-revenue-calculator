@@ -281,12 +281,21 @@ const description = t('page.description');
 
   // Main calculator logic
   document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, looking for elements...');
     const form = document.getElementById('revenueCalculator');
     const emailForm = document.getElementById('emailForm');
     const resultsSection = document.getElementById('results');
     const loadingContainer = document.getElementById('loadingContainer');
     const loadingText = document.getElementById('loadingText');
     const rebookRateInput = document.getElementById('rebookRate');
+    
+    console.log('Elements found:', {
+      form: !!form,
+      emailForm: !!emailForm,
+      resultsSection: !!resultsSection,
+      loadingContainer: !!loadingContainer,
+      rebookRateInput: !!rebookRateInput
+    });
 
     // Handle rebooking rate validation
     if (rebookRateInput) {
@@ -410,8 +419,11 @@ const description = t('page.description');
     }
 
     // Email form handling
+    console.log('Looking for emailForm element:', emailForm);
     if (emailForm) {
+      console.log('Email form found, adding event listener');
       emailForm.addEventListener('submit', async function(e) {
+        console.log('Form submission triggered');
         e.preventDefault();
         
         const email = document.getElementById('email').value;
@@ -433,23 +445,32 @@ const description = t('page.description');
         submitButton.disabled = true;
         
         try {
-          // Send to webhook
-          const response = await fetch('https://n8n.aiadaptiv.com/webhook/a5fca94e-b74b-4a0f-847e-13b944c4bdf6', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              product: 'revenueSaaS',
-              email: email,
-              isAgreedToReceiveMails: true
-            })
+          // Create form data for webhook submission
+          const formData = new FormData();
+          formData.append('product', 'revenueSaaS');
+          formData.append('email', email);
+          formData.append('isAgreedToReceiveMails', 'true');
+          
+          console.log('Sending webhook data:', {
+            product: 'revenueSaaS',
+            email: email,
+            isAgreedToReceiveMails: true
           });
           
-          if (response.ok) {
+          const response = await fetch('https://n8n.aiadaptiv.com/webhook/a5fca94e-b74b-4a0f-847e-13b944c4bdf6', {
+            method: 'POST',
+            body: formData
+          });
+          
+          console.log('Webhook response status:', response.status);
+          console.log('Webhook response ok:', response.ok);
+          
+          if (response.ok || response.status === 0) {
             // Success feedback
             submitButton.textContent = '✓ Sent!';
             submitButton.style.background = 'var(--success)';
+            
+            console.log('Webhook submission successful');
             
             // Analytics
             if (typeof gtag !== 'undefined') {
@@ -474,13 +495,22 @@ const description = t('page.description');
               document.getElementById('emailConsent').checked = true; // Reset checkbox to checked
             }, 3000);
           } else {
-            throw new Error('Failed to submit');
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
           }
           
         } catch (error) {
           console.error('Webhook submission failed:', error);
+          console.error('Error details:', {
+            name: error.name,
+            message: error.message,
+            stack: error.stack
+          });
+          
           submitButton.textContent = 'Error - Try Again';
           submitButton.disabled = false;
+          
+          // Show detailed error to user for debugging
+          alert(`Webhook error: ${error.message}. Check browser console for details.`);
           
           // Reset to original after delay
           setTimeout(() => {
