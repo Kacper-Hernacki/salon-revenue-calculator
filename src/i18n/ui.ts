@@ -40,12 +40,12 @@ export const ui = {
     
     // CTA
     'cta.title': 'Ready to Capture This Lost Revenue?',
-    'cta.subtitle': 'Get your personalized implementation plan and start recovering revenue in 30 days',
-    'cta.email.title': 'Get Your Free Custom Recovery Strategy',
+    'cta.subtitle': 'Join our waitlist to be the first to know when our AI rebooking solution launches',
+    'cta.email.title': 'Join the Waitlist',
     'cta.email.label': 'Email address',
     'cta.email.placeholder': 'your@email.com',
-    'cta.email.help': 'Enter your email to receive your free recovery strategy',
-    'cta.email.submit': 'Get My Plan',
+    'cta.email.help': 'Enter your email to join our exclusive waitlist',
+    'cta.email.submit': 'Join Waitlist',
     
     // Trust indicators
     'trust.noCard': 'No credit card required',
@@ -72,7 +72,11 @@ export const ui = {
     
     // Language selector
     'lang.select': 'Language',
-    'lang.current': 'Current language'
+    'lang.current': 'Current language',
+    
+    // Loading states
+    'loading.calculating': 'Calculating your revenue potential...',
+    'loading.analyzing': 'Analyzing your data with AI...'
   },
   
   es: {
@@ -116,12 +120,12 @@ export const ui = {
     
     // CTA
     'cta.title': '¿Listo Para Capturar Estos Ingresos Perdidos?',
-    'cta.subtitle': 'Obtén tu plan de implementación personalizado y comienza a recuperar ingresos en 30 días',
-    'cta.email.title': 'Obtén Tu Estrategia de Recuperación Personalizada Gratis',
+    'cta.subtitle': 'Únete a nuestra lista de espera para ser el primero en saber cuándo se lance nuestra solución de rebooking con IA',
+    'cta.email.title': 'Únete a la Lista de Espera',
     'cta.email.label': 'Dirección de correo electrónico',
     'cta.email.placeholder': 'tu@email.com',
-    'cta.email.help': 'Ingresa tu email para recibir tu estrategia de recuperación gratuita',
-    'cta.email.submit': 'Obtener Mi Plan',
+    'cta.email.help': 'Ingresa tu email para unirte a nuestra lista de espera exclusiva',
+    'cta.email.submit': 'Unirse a Lista de Espera',
     
     // Trust indicators
     'trust.noCard': 'No se requiere tarjeta de crédito',
@@ -192,12 +196,12 @@ export const ui = {
     
     // CTA
     'cta.title': 'Prêt À Capturer Ces Revenus Perdus ?',
-    'cta.subtitle': 'Obtenez votre plan d\'implémentation personnalisé et commencez à récupérer les revenus en 30 jours',
-    'cta.email.title': 'Obtenez Votre Stratégie de Récupération Personnalisée Gratuite',
+    'cta.subtitle': 'Rejoignez notre liste d\'attente pour être le premier informé du lancement de notre solution de rebooking IA',
+    'cta.email.title': 'Rejoindre la Liste d\'Attente',
     'cta.email.label': 'Adresse email',
     'cta.email.placeholder': 'votre@email.com',
-    'cta.email.help': 'Entrez votre email pour recevoir votre stratégie de récupération gratuite',
-    'cta.email.submit': 'Obtenir Mon Plan',
+    'cta.email.help': 'Entrez votre email pour rejoindre notre liste d\'attente exclusive',
+    'cta.email.submit': 'Rejoindre la Liste d\'Attente',
     
     // Trust indicators
     'trust.noCard': 'Aucune carte de crédit requise',
@@ -268,12 +272,12 @@ export const ui = {
     
     // CTA
     'cta.title': 'Gotowy Na Przechwycenie Tych Straconych Przychodów?',
-    'cta.subtitle': 'Otrzymaj swój spersonalizowany plan implementacji i zacznij odzyskiwać przychody w 30 dni',
-    'cta.email.title': 'Otrzymaj Swoją Darmową Strategię Odzyskiwania',
+    'cta.subtitle': 'Dołącz do naszej listy oczekujących, aby być pierwszym, który dowie się o starcie naszego rozwiązania rebookingu z AI',
+    'cta.email.title': 'Dołącz do Listy Oczekujących',
     'cta.email.label': 'Adres email',
     'cta.email.placeholder': 'twoj@email.com',
-    'cta.email.help': 'Wprowadź swój email aby otrzymać darmową strategię odzyskiwania',
-    'cta.email.submit': 'Otrzymaj Mój Plan',
+    'cta.email.help': 'Wprowadź swój email, aby dołączyć do naszej ekskluzywnej listy oczekujących',
+    'cta.email.submit': 'Dołącz do Listy Oczekujących',
     
     // Trust indicators
     'trust.noCard': 'Karta kredytowa nie wymagana',

@@ -223,30 +223,13 @@ const description = t('page.description');
             </form>
           </div>
 
-          <div class="trust-indicators">
-            <div class="trust-item">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              {t('trust.noCard')}
-            </div>
-            <div class="trust-item">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              {t('trust.privacy')}
-            </div>
-            <div class="trust-item">
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
-              </svg>
-              {t('trust.trusted')}
-            </div>
-          </div>
         </div>
       </section>
 
-      <div class="loading-spinner" id="spinner" aria-hidden="true"></div>
+      <div class="loading-container" id="loadingContainer" style="display: none;">
+        <div class="loading-spinner" id="spinner" aria-hidden="true"></div>
+        <p class="loading-text" id="loadingText">{t('loading.calculating')}</p>
+      </div>
     </section>
   </main>
 </Layout>
@@ -287,7 +270,8 @@ const description = t('page.description');
     const form = document.getElementById('revenueCalculator');
     const emailForm = document.getElementById('emailForm');
     const resultsSection = document.getElementById('results');
-    const spinner = document.getElementById('spinner');
+    const loadingContainer = document.getElementById('loadingContainer');
+    const loadingText = document.getElementById('loadingText');
 
     if (form) {
       form.addEventListener('submit', function(e) {
@@ -299,8 +283,34 @@ const description = t('page.description');
         const rebookRate = parseFloat(document.getElementById('rebookRate').value) || 40;
         // const avgVisitsYear = parseFloat(document.getElementById('avgVisitsYear').value) || 6;
         
-        // Show spinner
-        spinner.style.display = 'block';
+        // Show loading
+        loadingContainer.style.display = 'flex';
+        loadingText.textContent = window.currentLang === 'en' ? 'Calculating your revenue potential...' :
+          window.currentLang === 'es' ? 'Calculando tu potencial de ingresos...' :
+          window.currentLang === 'fr' ? 'Calcul de votre potentiel de revenus...' :
+          window.currentLang === 'pl' ? 'Obliczanie twojego potencjału przychodów...' :
+          window.currentLang === 'ar' ? 'حساب إمكانات الإيرادات الخاصة بك...' :
+          window.currentLang === 'ru' ? 'Расчитываем ваш потенциал доходов...' :
+          window.currentLang === 'zh' ? '计算您的收入潜力...' :
+          window.currentLang === 'it' ? 'Calcolo del tuo potenziale di ricavi...' :
+          window.currentLang === 'ja' ? 'あなたの収益ポテンシャルを計算中...' :
+          'Calculating your revenue potential...';
+          
+        // Switch to analyzing text after 1 second
+        setTimeout(() => {
+          if (loadingContainer.style.display === 'flex') {
+            loadingText.textContent = window.currentLang === 'en' ? 'Analyzing your data with AI...' :
+              window.currentLang === 'es' ? 'Analizando tus datos con IA...' :
+              window.currentLang === 'fr' ? 'Analyse de vos données avec l\'IA...' :
+              window.currentLang === 'pl' ? 'Analizowanie twoich danych z AI...' :
+              window.currentLang === 'ar' ? 'تحليل بياناتك باستخدام الذكاء الاصطناعي...' :
+              window.currentLang === 'ru' ? 'Анализируем ваши данные с помощью ИИ...' :
+              window.currentLang === 'zh' ? '使用AI分析您的数据...' :
+              window.currentLang === 'it' ? 'Analisi dei tuoi dati con IA...' :
+              window.currentLang === 'ja' ? 'AIでデータを分析中...' :
+              'Analyzing your data with AI...';
+          }
+        }, 1000);
         
         setTimeout(() => {
           // Calculate metrics
@@ -325,8 +335,8 @@ const description = t('page.description');
           document.getElementById('lostPercentage').textContent = lostPercentage + '%';
           document.getElementById('increaseAmount').textContent = formatCurrency(lostMonthlyRevenue);
           
-          // Hide spinner and show results
-          spinner.style.display = 'none';
+          // Hide loading and show results
+          loadingContainer.style.display = 'none';
           resultsSection.classList.add('show');
           resultsSection.style.display = 'block';
           
@@ -799,19 +809,48 @@ const description = t('page.description');
     color: var(--success);
   }
 
+  .loading-container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+
   .loading-spinner {
-    display: none;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #E5E7EB;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #E5E7EB;
     border-top-color: var(--primary);
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .loading-text {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    animation: pulse 2s ease-in-out infinite;
   }
 
   @keyframes spin {
     to { transform: rotate(360deg); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
   }
 
   @media (max-width: 768px) {
