@@ -46,6 +46,7 @@ export const ui = {
     'cta.email.placeholder': 'your@email.com',
     'cta.email.help': 'Enter your email to join our exclusive waitlist',
     'cta.email.submit': 'Join Waitlist',
+    'cta.email.consent': 'I agree to receive updates about the AI rebooking solution',
     
     // Trust indicators
     'trust.noCard': 'No credit card required',
@@ -76,7 +77,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Calculating your revenue potential...',
-    'loading.analyzing': 'Analyzing your data with AI...'
+    'loading.analyzing': 'Analyzing your data with AI...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'Excellent! Your rebooking rate is already above industry standards. We\'ve set it to 85% for the most accurate comparison.'
   },
   
   es: {
@@ -126,6 +130,7 @@ export const ui = {
     'cta.email.placeholder': 'tu@email.com',
     'cta.email.help': 'Ingresa tu email para unirte a nuestra lista de espera exclusiva',
     'cta.email.submit': 'Unirse a Lista de Espera',
+    'cta.email.consent': 'Acepto recibir actualizaciones sobre la solución de rebooking con IA',
     
     // Trust indicators
     'trust.noCard': 'No se requiere tarjeta de crédito',
@@ -156,7 +161,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Calculando tu potencial de ingresos...',
-    'loading.analyzing': 'Analizando tus datos con IA...'
+    'loading.analyzing': 'Analizando tus datos con IA...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': '¡Excelente! Tu tasa de rebooking ya está por encima de los estándares de la industria. La hemos establecido en 85% para la comparación más precisa.'
   },
   
   fr: {
@@ -206,6 +214,7 @@ export const ui = {
     'cta.email.placeholder': 'votre@email.com',
     'cta.email.help': 'Entrez votre email pour rejoindre notre liste d\'attente exclusive',
     'cta.email.submit': 'Rejoindre la Liste d\'Attente',
+    'cta.email.consent': 'J\'accepte de recevoir des mises à jour sur la solution de rebooking IA',
     
     // Trust indicators
     'trust.noCard': 'Aucune carte de crédit requise',
@@ -236,7 +245,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Calcul de votre potentiel de revenus...',
-    'loading.analyzing': 'Analyse de vos données avec l\'IA...'
+    'loading.analyzing': 'Analyse de vos données avec l\'IA...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'Excellent ! Votre taux de rebooking est déjà au-dessus des standards de l\'industrie. Nous l\'avons fixé à 85% pour la comparaison la plus précise.'
   },
   
   pl: {
@@ -286,6 +298,7 @@ export const ui = {
     'cta.email.placeholder': 'twoj@email.com',
     'cta.email.help': 'Wprowadź swój email, aby dołączyć do naszej ekskluzywnej listy oczekujących',
     'cta.email.submit': 'Dołącz do Listy Oczekujących',
+    'cta.email.consent': 'Wyrażam zgodę na otrzymywanie aktualizacji o rozwiązaniu rebookingu AI',
     
     // Trust indicators
     'trust.noCard': 'Karta kredytowa nie wymagana',
@@ -316,7 +329,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Obliczanie twojego potencjału przychodów...',
-    'loading.analyzing': 'Analizowanie twoich danych z AI...'
+    'loading.analyzing': 'Analizowanie twoich danych z AI...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'Świetnie! Twój wskaźnik rebookingu jest już powyżej standardów branżowych. Ustawiliśmy go na 85% dla najdokładniejszego porównania.'
   },
   
   ar: {
@@ -366,6 +382,7 @@ export const ui = {
     'cta.email.placeholder': 'بريدك@email.com',
     'cta.email.help': 'أدخل بريدك الإلكتروني لتلقي استراتيجية الاسترداد المجانية',
     'cta.email.submit': 'احصل على خطتي',
+    'cta.email.consent': 'أوافق على تلقي التحديثات حول حل إعادة الحجز بالذكاء الاصطناعي',
     
     // Trust indicators
     'trust.noCard': 'لا حاجة لبطاقة ائتمان',
@@ -396,7 +413,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'حساب إمكانات الإيرادات الخاصة بك...',
-    'loading.analyzing': 'تحليل بياناتك باستخدام الذكاء الاصطناعي...'
+    'loading.analyzing': 'تحليل بياناتك باستخدام الذكاء الاصطناعي...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'ممتاز! معدل إعادة الحجز لديك أعلى من معايير الصناعة. قمنا بتعيينه على 85% للمقارنة الأكثر دقة.'
   },
   
   ru: {
@@ -446,6 +466,7 @@ export const ui = {
     'cta.email.placeholder': 'ваш@email.com',
     'cta.email.help': 'Введите ваш email для получения бесплатной стратегии восстановления',
     'cta.email.submit': 'Получить Мой План',
+    'cta.email.consent': 'Я согласен получать обновления о решении перебронирования с ИИ',
     
     // Trust indicators
     'trust.noCard': 'Кредитная карта не требуется',
@@ -476,7 +497,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Рассчитываем ваш потенциал доходов...',
-    'loading.analyzing': 'Анализируем ваши данные с помощью ИИ...'
+    'loading.analyzing': 'Анализируем ваши данные с помощью ИИ...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'Отлично! Ваш уровень перебронирования уже выше отраслевых стандартов. Мы установили его на 85% для наиболее точного сравнения.'
   },
   
   zh: {
@@ -526,6 +550,7 @@ export const ui = {
     'cta.email.placeholder': '您的@email.com',
     'cta.email.help': '输入您的邮箱以接收免费恢复策略',
     'cta.email.submit': '获取我的计划',
+    'cta.email.consent': '我同意接收关于AI重新预订解决方案的更新',
     
     // Trust indicators
     'trust.noCard': '无需信用卡',
@@ -556,7 +581,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': '计算您的收入潜力...',
-    'loading.analyzing': '使用AI分析您的数据...'
+    'loading.analyzing': '使用AI分析您的数据...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': '太棒了！您的重新预约率已经超过行业标准。我们将其设置为85%以进行最准确的比较。'
   },
   
   it: {
@@ -606,6 +634,7 @@ export const ui = {
     'cta.email.placeholder': 'tua@email.com',
     'cta.email.help': 'Inserisci la tua email per ricevere la tua strategia di recupero gratuita',
     'cta.email.submit': 'Ottieni il Mio Piano',
+    'cta.email.consent': 'Accetto di ricevere aggiornamenti sulla soluzione di ribooking AI',
     
     // Trust indicators
     'trust.noCard': 'Nessuna carta di credito richiesta',
@@ -636,7 +665,10 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'Calcolo del tuo potenziale di ricavi...',
-    'loading.analyzing': 'Analisi dei tuoi dati con IA...'
+    'loading.analyzing': 'Analisi dei tuoi dati con IA...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': 'Eccellente! Il tuo tasso di ribooking è già sopra gli standard del settore. L\'abbiamo impostato a 85% per il confronto più accurato.'
   },
   
   ja: {
@@ -686,6 +718,7 @@ export const ui = {
     'cta.email.placeholder': 'あなたの@email.com',
     'cta.email.help': '無料回復戦略を受け取るためにメールを入力してください',
     'cta.email.submit': 'プランを取得',
+    'cta.email.consent': 'AI再予約ソリューションに関するアップデートの受信に同意します',
     
     // Trust indicators
     'trust.noCard': 'クレジットカード不要',
@@ -716,6 +749,9 @@ export const ui = {
     
     // Loading states
     'loading.calculating': 'あなたの収益ポテンシャルを計算中...',
-    'loading.analyzing': 'AIでデータを分析中...'
+    'loading.analyzing': 'AIでデータを分析中...',
+    
+    // Validation messages
+    'validation.rebookRate.excellent': '素晴らしい！あなたの再予約率はすでに業界標準を上回っています。最も正確な比較のために85%に設定しました。'
   }
 } as const;
