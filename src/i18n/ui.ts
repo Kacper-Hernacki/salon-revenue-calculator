@@ -121,7 +121,14 @@ export const ui = {
     'waitlist.email.placeholder': 'your@email.com',
     'waitlist.email.help': 'Enter your email to join our exclusive waitlist',
     'waitlist.consent': 'I agree to receive updates about the AI rebooking solution',
-    'waitlist.submit': 'Join Waitlist'
+    'waitlist.submit': 'Join Waitlist',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'Don\'t Waste Revenue, Use My Tool to Increase It!',
+    'promo.subtitle': 'Here\'s how my AI rebooking solution will work:',
+    'promo.feature1': 'Automated free time slots tracking',
+    'promo.feature2': 'Automated sending of invites to clients for free time slots in their favourite times - AI customizes it',
+    'promo.feature3': 'Auto send rebooking links'
   },
   
   es: {
@@ -246,7 +253,14 @@ export const ui = {
     'waitlist.email.placeholder': 'tu@email.com',
     'waitlist.email.help': 'Ingresa tu email para unirte a nuestra lista de espera exclusiva',
     'waitlist.consent': 'Acepto recibir actualizaciones sobre la solución de rebooking con IA',
-    'waitlist.submit': 'Unirse a la Lista de Espera'
+    'waitlist.submit': 'Unirse a la Lista de Espera',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': '¡No Desperdicies Ingresos, Usa Mi Herramienta para Aumentarlos!',
+    'promo.subtitle': 'Así es como funcionará mi solución de rebooking con IA:',
+    'promo.feature1': 'Seguimiento automatizado de horarios libres',
+    'promo.feature2': 'Envío automatizado de invitaciones a clientes para horarios libres en sus horarios favoritos - IA lo personaliza',
+    'promo.feature3': 'Envío automático de enlaces de rebooking'
   },
   
   fr: {
@@ -371,7 +385,14 @@ export const ui = {
     'waitlist.email.placeholder': 'votre@email.com',
     'waitlist.email.help': 'Entrez votre email pour rejoindre notre liste d\'attente exclusive',
     'waitlist.consent': 'J\'accepte de recevoir des mises à jour sur la solution de rebooking IA',
-    'waitlist.submit': 'Rejoindre la Liste d\'Attente'
+    'waitlist.submit': 'Rejoindre la Liste d\'Attente',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'Ne Gaspillez Pas les Revenus, Utilisez Mon Outil pour les Augmenter !',
+    'promo.subtitle': 'Voici comment ma solution de rebooking IA fonctionnera :',
+    'promo.feature1': 'Suivi automatisé des créneaux horaires libres',
+    'promo.feature2': 'Envoi automatisé d\'invitations aux clients pour les créneaux libres à leurs heures préférées - l\'IA le personnalise',
+    'promo.feature3': 'Envoi automatique des liens de rebooking'
   },
   
   pl: {
@@ -496,7 +517,14 @@ export const ui = {
     'waitlist.email.placeholder': 'twoj@email.com',
     'waitlist.email.help': 'Wprowadź swój email, aby dołączyć do naszej ekskluzywnej listy oczekujących',
     'waitlist.consent': 'Zgadzam się na otrzymywanie aktualizacji o rozwiązaniu rebookingu AI',
-    'waitlist.submit': 'Dołącz do Listy Oczekujących'
+    'waitlist.submit': 'Dołącz do Listy Oczekujących',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'Nie Marnuj Przychodów, Użyj Mojego Narzędzia, Aby Je Zwiększyć!',
+    'promo.subtitle': 'Oto jak będzie działać moje rozwiązanie AI rebooking:',
+    'promo.feature1': 'Automatyczne śledzenie wolnych terminów',
+    'promo.feature2': 'Automatyczne wysyłanie zaproszeń do klientów na wolne terminy w ich ulubionych godzinach - AI to personalizuje',
+    'promo.feature3': 'Automatyczne wysyłanie linków rebooking'
   },
   
   ar: {
@@ -621,7 +649,14 @@ export const ui = {
     'waitlist.email.placeholder': 'your@email.com',
     'waitlist.email.help': 'أدخل بريدك الإلكتروني للانضمام إلى قائمة الانتظار الحصرية',
     'waitlist.consent': 'أوافق على تلقي تحديثات حول حل إعادة الحجز بالذكاء الاصطناعي',
-    'waitlist.submit': 'الانضمام إلى قائمة الانتظار'
+    'waitlist.submit': 'الانضمام إلى قائمة الانتظار',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'لا تهدر الإيرادات، استخدم أداتي لزيادتها!',
+    'promo.subtitle': 'إليك كيف ستعمل حلول إعادة الحجز بالذكاء الاصطناعي:',
+    'promo.feature1': 'تتبع تلقائي للفترات الزمنية المجانية',
+    'promo.feature2': 'إرسال تلقائي للدعوات للعملاء للفترات الحرة في أوقاتهم المفضلة - الذكاء الاصطناعي يخصصها',
+    'promo.feature3': 'إرسال تلقائي لروابط إعادة الحجز'
   },
   
   ru: {
@@ -746,7 +781,14 @@ export const ui = {
     'waitlist.email.placeholder': 'ваш@email.com',
     'waitlist.email.help': 'Введите свой email, чтобы присоединиться к нашему эксклюзивному списку ожидания',
     'waitlist.consent': 'Я согласен получать обновления о ИИ-решении для перебронирования',
-    'waitlist.submit': 'Присоединиться к Списку Ожидания'
+    'waitlist.submit': 'Присоединиться к Списку Ожидания',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'Не Теряйте Доходы, Используйте Мой Инструмент Чтобы Их Увеличить!',
+    'promo.subtitle': 'Вот как будет работать мое ИИ-решение для перебронирования:',
+    'promo.feature1': 'Автоматическое отслеживание свободных временных слотов',
+    'promo.feature2': 'Автоматическая отправка приглашений клиентам на свободные временные слоты в их любимое время - ИИ персонализирует это',
+    'promo.feature3': 'Автоматическая отправка ссылок для перебронирования'
   },
   
   zh: {
@@ -871,7 +913,14 @@ export const ui = {
     'waitlist.email.placeholder': '你的@邮箱.com',
     'waitlist.email.help': '输入您的邮箱以加入我们的专属等候名单',
     'waitlist.consent': '我同意接收有关AI重新预约解决方案的更新',
-    'waitlist.submit': '加入等候名单'
+    'waitlist.submit': '加入等候名单',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': '不要浪费收入，使用我的工具来增加收入！',
+    'promo.subtitle': '我的AI重新预约解决方案将如何工作：',
+    'promo.feature1': '自动跟踪空闲时间段',
+    'promo.feature2': '在客户喜欢的时间自动向客户发送空闲时间段邀请 - AI进行个性化定制',
+    'promo.feature3': '自动发送重新预约链接'
   },
   
   it: {
@@ -996,7 +1045,14 @@ export const ui = {
     'waitlist.email.placeholder': 'tua@email.com',
     'waitlist.email.help': 'Inserisci la tua email per unirti alla nostra lista d\'attesa esclusiva',
     'waitlist.consent': 'Accetto di ricevere aggiornamenti sulla soluzione di ribooking IA',
-    'waitlist.submit': 'Unisciti alla Lista d\'Attesa'
+    'waitlist.submit': 'Unisciti alla Lista d\'Attesa',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': 'Non Sprecare Ricavi, Usa il Mio Strumento per Aumentarli!',
+    'promo.subtitle': 'Ecco come funzionerà la mia soluzione di ribooking IA:',
+    'promo.feature1': 'Tracciamento automatizzato degli slot di tempo liberi',
+    'promo.feature2': 'Invio automatizzato di inviti ai clienti per slot liberi nei loro orari preferiti - l\'IA li personalizza',
+    'promo.feature3': 'Invio automatico di link di ribooking'
   },
   
   ja: {
@@ -1121,6 +1177,13 @@ export const ui = {
     'waitlist.email.placeholder': 'あなた@email.com',
     'waitlist.email.help': '限定ウェイトリストに参加するためにメールアドレスを入力してください',
     'waitlist.consent': 'AI再予約ソリューションのアップデートを受け取ることに同意します',
-    'waitlist.submit': 'ウェイトリストに参加'
+    'waitlist.submit': 'ウェイトリストに参加',
+    
+    // Promotional section (separate from solution section)
+    'promo.title': '収益を無駄にしないで、私のツールでそれを増やしましょう！',
+    'promo.subtitle': '私のAI再予約ソリューションがどのように動作するか：',
+    'promo.feature1': '自動化された空き時間スロット追跡',
+    'promo.feature2': 'お客様の好みの時間帯の空きスロットへの招待の自動送信 - AIがカスタマイズします',
+    'promo.feature3': '再予約リンクの自動送信'
   }
 } as const;
