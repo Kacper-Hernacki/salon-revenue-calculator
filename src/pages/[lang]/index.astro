@@ -198,45 +198,69 @@ const description = t('page.description');
         </div>
 
         <div class="cta-section">
-          <h3 class="cta-title">{t('cta.title')}</h3>
-          <p class="cta-subtitle">{t('cta.subtitle')}</p>
-          
-          <div class="email-capture">
-            <p style="margin-bottom: 16px; color: var(--dark); font-weight: 600;">
-              <svg class="email-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-              </svg>
-              {t('cta.email.title')}
-            </p>
-            <form id="emailForm" class="email-form" aria-label="Email Subscription Form">
-              <label for="email" class="visually-hidden">{t('cta.email.label')}</label>
-              <input 
-                type="email" 
-                id="email" 
-                placeholder={t('cta.email.placeholder')}
-                required 
-                aria-describedby="email-help"
-              />
-              <div id="email-help" class="visually-hidden">{t('cta.email.help')}</div>
-              
-              <div class="checkbox-container">
-                <label class="checkbox-label">
-                  <input 
-                    type="checkbox" 
-                    id="emailConsent" 
-                    checked 
-                    required
-                  />
-                  <span class="checkmark"></span>
-                  {t('cta.email.consent')}
-                </label>
+          <!-- Promotional content section -->
+          <div class="promo-section">
+            <h3 class="promo-title">Don't Waste Revenue, Use My Tool to Increase It!</h3>
+            <p class="promo-subtitle">Here's how my AI rebooking solution will work:</p>
+            
+            <div class="features-list">
+              <div class="feature-item">
+                <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated free time slots tracking</span>
               </div>
-              
-              <button type="submit" class="btn btn-primary">{t('cta.email.submit')}</button>
-            </form>
+              <div class="feature-item">
+                <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated sending of invites to clients for free time slots in their favourite times - AI customizes it</span>
+              </div>
+              <div class="feature-item">
+                <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Auto send rebooking links</span>
+              </div>
+            </div>
           </div>
 
+          <!-- Join waitlist section -->
+          <div class="waitlist-section">
+            <h3 class="waitlist-title">Ready to Capture This Lost Revenue?</h3>
+            <p class="waitlist-subtitle">Join our waitlist to be the first to know when our AI rebooking solution launches</p>
+            
+            <div class="email-capture">
+              <form id="emailForm" class="email-form" aria-label="Email Subscription Form">
+                <div class="email-input-container">
+                  <label for="email" class="email-label">Email address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="your@email.com"
+                    required 
+                    aria-describedby="email-help"
+                  />
+                  <div id="email-help" class="input-help">Enter your email to join our exclusive waitlist</div>
+                </div>
+                
+                <div class="checkbox-container">
+                  <label class="checkbox-label">
+                    <input 
+                      type="checkbox" 
+                      id="emailConsent" 
+                      checked 
+                      required
+                    />
+                    <span class="checkmark"></span>
+                    I agree to receive updates about the AI rebooking solution
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Join Waitlist</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -813,18 +837,77 @@ const description = t('page.description');
     padding: 32px;
     background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
     border-radius: 16px;
-    text-align: center;
     border: 2px dashed rgba(139, 92, 246, 0.3);
   }
 
-  .cta-title {
+  /* Promotional section styles */
+  .promo-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid rgba(139, 92, 246, 0.1);
+  }
+
+  .promo-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  .promo-subtitle {
+    color: var(--dark);
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+
+  .feature-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--success);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .feature-item span {
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Waitlist section styles */
+  .waitlist-section {
+    text-align: center;
+  }
+
+  .waitlist-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--dark);
     margin-bottom: 12px;
   }
 
-  .cta-subtitle {
+  .waitlist-subtitle {
     color: #6B7280;
     margin-bottom: 24px;
     font-size: 1.05rem;
@@ -880,21 +963,56 @@ const description = t('page.description');
 
   .email-capture {
     background: white;
-    padding: 24px;
-    border-radius: 12px;
+    padding: 32px;
+    border-radius: 16px;
     margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E5E7EB;
   }
 
   .email-form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 16px;
+    gap: 20px;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
-  .email-form input[type="email"] {
-    flex: 1;
+  .email-input-container {
+    text-align: left;
+  }
+
+  .email-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+
+  .email-form #email {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #FAFAFA;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .email-form #email:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  }
+
+  .input-help {
+    font-size: 0.8rem;
+    color: #6B7280;
+    margin-top: 4px;
+    font-style: italic;
   }
 
   .checkbox-container {
