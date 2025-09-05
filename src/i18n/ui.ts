@@ -80,7 +80,48 @@ export const ui = {
     'loading.analyzing': 'Analyzing your data with AI...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'Excellent! Your rebooking rate is already above industry standards. We\'ve set it to 85% for the most accurate comparison.'
+    'validation.rebookRate.excellent': 'Excellent! Your rebooking rate is already above industry standards. We\'ve set it to 85% for the most accurate comparison.',
+    
+    // New content - Calculation explanation
+    'calc.explanation.title': 'How We Calculate Your Lost Revenue',
+    'calc.explanation.intro': 'Our AI-powered algorithm analyzes your salon\'s data to identify revenue gaps:',
+    'calc.explanation.step1': 'Current Revenue: Monthly clients × Average ticket price',
+    'calc.explanation.step2': 'Lost Opportunities: Clients who don\'t rebook due to poor timing/communication',
+    'calc.explanation.step3': 'Recovery Potential: Revenue you could capture with optimal rebooking (industry standard: 85%)',
+    
+    // Solution features
+    'solution.title': 'How My AI Solution Recovers This Lost Revenue',
+    'solution.intro': 'Most salons lose 15-40% of potential revenue due to poor rebooking systems. Here\'s how I fix this:',
+    'solution.feature1.title': 'Smart Slot Detection',
+    'solution.feature1.desc': 'My AI continuously monitors your calendar, instantly identifying last-minute cancellations and available slots that match your clients\' preferences.',
+    'solution.feature2.title': 'Personalized Invitations',
+    'solution.feature2.desc': 'AI crafts personalized messages for each client based on their booking history, preferred times, and services - sent automatically when perfect slots become available.',
+    'solution.feature3.title': 'Instant Rebooking Links',
+    'solution.feature3.desc': 'Clients receive one-click booking links for their favorite time slots. No phone calls, no back-and-forth - just instant confirmations that fill your schedule.',
+    'solution.feature4.title': 'Target Results',
+    'solution.feature4.desc': 'Based on industry data, our goal is to help you achieve 85% rebooking rate and capture the lost revenue shown in your calculation above.',
+    
+    // Pilot program
+    'pilot.title': 'Exclusive Pilot Program',
+    'pilot.intro': 'I\'m launching a pilot program with revolutionary pricing:',
+    'pilot.feature1': 'No monthly fees - Only pay per successful rebooking',
+    'pilot.feature2': 'Risk-free - You only pay when we generate revenue for you',
+    'pilot.feature3': 'Beta access - Be among the first to use cutting-edge AI rebooking',
+    'pilot.feature4': 'Full setup included - I\'ll personally configure everything for your salon',
+    'pilot.cta': 'Join the waitlist to secure your spot in this exclusive pilot program!',
+    
+    // Schedule call
+    'schedule.or': 'Or',
+    'schedule.cta': 'Schedule a Call with Me',
+    
+    // Waitlist section 
+    'waitlist.title': 'Ready to Capture This Lost Revenue?',
+    'waitlist.subtitle': 'Join our waitlist to be the first to know when our AI rebooking solution launches',
+    'waitlist.email.label': 'Email address',
+    'waitlist.email.placeholder': 'your@email.com',
+    'waitlist.email.help': 'Enter your email to join our exclusive waitlist',
+    'waitlist.consent': 'I agree to receive updates about the AI rebooking solution',
+    'waitlist.submit': 'Join Waitlist'
   },
   
   es: {
@@ -164,7 +205,48 @@ export const ui = {
     'loading.analyzing': 'Analizando tus datos con IA...',
     
     // Validation messages
-    'validation.rebookRate.excellent': '¡Excelente! Tu tasa de rebooking ya está por encima de los estándares de la industria. La hemos establecido en 85% para la comparación más precisa.'
+    'validation.rebookRate.excellent': '¡Excelente! Tu tasa de rebooking ya está por encima de los estándares de la industria. La hemos establecido en 85% para la comparación más precisa.',
+    
+    // New content - Calculation explanation
+    'calc.explanation.title': 'Cómo Calculamos Tus Ingresos Perdidos',
+    'calc.explanation.intro': 'Nuestro algoritmo impulsado por IA analiza los datos de tu salón para identificar brechas de ingresos:',
+    'calc.explanation.step1': 'Ingresos Actuales: Clientes mensuales × Precio promedio del ticket',
+    'calc.explanation.step2': 'Oportunidades Perdidas: Clientes que no reservan debido a mal timing/comunicación',
+    'calc.explanation.step3': 'Potencial de Recuperación: Ingresos que podrías capturar con rebooking óptimo (estándar de industria: 85%)',
+    
+    // Solution features
+    'solution.title': 'Cómo Mi Solución IA Recupera Estos Ingresos Perdidos',
+    'solution.intro': 'La mayoría de salones pierden 15-40% de ingresos potenciales debido a sistemas de rebooking deficientes. Así es como lo soluciono:',
+    'solution.feature1.title': 'Detección Inteligente de Horarios',
+    'solution.feature1.desc': 'Mi IA monitorea continuamente tu calendario, identificando instantáneamente cancelaciones de último minuto y horarios disponibles que coinciden con las preferencias de tus clientes.',
+    'solution.feature2.title': 'Invitaciones Personalizadas',
+    'solution.feature2.desc': 'La IA crea mensajes personalizados para cada cliente basados en su historial de reservas, horarios preferidos y servicios - enviados automáticamente cuando se liberan horarios perfectos.',
+    'solution.feature3.title': 'Enlaces de Rebooking Instantáneo',
+    'solution.feature3.desc': 'Los clientes reciben enlaces de reserva con un clic para sus horarios favoritos. Sin llamadas telefónicas, sin ida y vuelta - solo confirmaciones instantáneas que llenan tu agenda.',
+    'solution.feature4.title': 'Resultados Objetivo',
+    'solution.feature4.desc': 'Basado en datos de la industria, nuestro objetivo es ayudarte a lograr una tasa de rebooking del 85% y capturar los ingresos perdidos mostrados en tu cálculo anterior.',
+    
+    // Pilot program
+    'pilot.title': 'Programa Piloto Exclusivo',
+    'pilot.intro': 'Estoy lanzando un programa piloto con precios revolucionarios:',
+    'pilot.feature1': 'Sin tarifas mensuales - Solo pagas por rebooking exitoso',
+    'pilot.feature2': 'Sin riesgos - Solo pagas cuando generamos ingresos para ti',
+    'pilot.feature3': 'Acceso beta - Sé uno de los primeros en usar rebooking IA de vanguardia',
+    'pilot.feature4': 'Configuración completa incluida - Configuraré personalmente todo para tu salón',
+    'pilot.cta': '¡Únete a la lista de espera para asegurar tu lugar en este programa piloto exclusivo!',
+    
+    // Schedule call
+    'schedule.or': 'O',
+    'schedule.cta': 'Agenda una Llamada Conmigo',
+    
+    // Waitlist section 
+    'waitlist.title': '¿Listo para Capturar Estos Ingresos Perdidos?',
+    'waitlist.subtitle': 'Únete a nuestra lista de espera para ser el primero en saber cuándo se lance nuestra solución de rebooking con IA',
+    'waitlist.email.label': 'Dirección de correo electrónico',
+    'waitlist.email.placeholder': 'tu@email.com',
+    'waitlist.email.help': 'Ingresa tu email para unirte a nuestra lista de espera exclusiva',
+    'waitlist.consent': 'Acepto recibir actualizaciones sobre la solución de rebooking con IA',
+    'waitlist.submit': 'Unirse a la Lista de Espera'
   },
   
   fr: {
@@ -248,7 +330,48 @@ export const ui = {
     'loading.analyzing': 'Analyse de vos données avec l\'IA...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'Excellent ! Votre taux de rebooking est déjà au-dessus des standards de l\'industrie. Nous l\'avons fixé à 85% pour la comparaison la plus précise.'
+    'validation.rebookRate.excellent': 'Excellent ! Votre taux de rebooking est déjà au-dessus des standards de l\'industrie. Nous l\'avons fixé à 85% pour la comparaison la plus précise.',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': 'Comment Nous Calculons Vos Revenus Perdus',
+    'calc.explanation.intro': 'Notre algorithme alimenté par l\'IA analyse les données de votre salon pour identifier les écarts de revenus :',
+    'calc.explanation.step1': 'Revenus Actuels : Clients mensuels × Prix moyen du ticket',
+    'calc.explanation.step2': 'Opportunités Perdues : Clients qui ne rebookent pas à cause d\'un mauvais timing/communication',
+    'calc.explanation.step3': 'Potentiel de Récupération : Revenus que vous pourriez capturer avec un rebooking optimal (standard industrie : 85%)',
+
+    // Solution features
+    'solution.title': 'Comment Ma Solution IA Récupère Ces Revenus Perdus',
+    'solution.intro': 'La plupart des salons perdent 15-40% des revenus potentiels à cause de systèmes de rebooking défaillants. Voici comment je résous cela :',
+    'solution.feature1.title': 'Détection Intelligente de Créneaux',
+    'solution.feature1.desc': 'Mon IA surveille continuellement votre calendrier, identifiant instantanément les annulations de dernière minute et les créneaux disponibles qui correspondent aux préférences de vos clients.',
+    'solution.feature2.title': 'Invitations Personnalisées',
+    'solution.feature2.desc': 'L\'IA crée des messages personnalisés pour chaque client basés sur leur historique de réservation, horaires préférés et services - envoyés automatiquement lorsque des créneaux parfaits deviennent disponibles.',
+    'solution.feature3.title': 'Liens de Rebooking Instantané',
+    'solution.feature3.desc': 'Les clients reçoivent des liens de réservation en un clic pour leurs créneaux favoris. Pas d\'appels téléphoniques, pas d\'allers-retours - juste des confirmations instantanées qui remplissent votre agenda.',
+    'solution.feature4.title': 'Résultats Cibles',
+    'solution.feature4.desc': 'Basé sur les données de l\'industrie, notre objectif est de vous aider à atteindre un taux de rebooking de 85% et capturer les revenus perdus montrés dans votre calcul ci-dessus.',
+
+    // Pilot program
+    'pilot.title': 'Programme Pilote Exclusif',
+    'pilot.intro': 'Je lance un programme pilote avec une tarification révolutionnaire :',
+    'pilot.feature1': 'Pas de frais mensuels - Payez seulement par rebooking réussi',
+    'pilot.feature2': 'Sans risque - Vous ne payez que quand nous générons des revenus pour vous',
+    'pilot.feature3': 'Accès bêta - Soyez parmi les premiers à utiliser le rebooking IA de pointe',
+    'pilot.feature4': 'Configuration complète incluse - Je configurerai personnellement tout pour votre salon',
+    'pilot.cta': 'Rejoignez la liste d\'attente pour sécuriser votre place dans ce programme pilote exclusif !',
+
+    // Schedule call
+    'schedule.or': 'Ou',
+    'schedule.cta': 'Planifier un Appel avec Moi',
+    
+    // Waitlist section 
+    'waitlist.title': 'Prêt à Capturer ces Revenus Perdus ?',
+    'waitlist.subtitle': 'Rejoignez notre liste d\'attente pour être le premier informé du lancement de notre solution de rebooking IA',
+    'waitlist.email.label': 'Adresse email',
+    'waitlist.email.placeholder': 'votre@email.com',
+    'waitlist.email.help': 'Entrez votre email pour rejoindre notre liste d\'attente exclusive',
+    'waitlist.consent': 'J\'accepte de recevoir des mises à jour sur la solution de rebooking IA',
+    'waitlist.submit': 'Rejoindre la Liste d\'Attente'
   },
   
   pl: {
@@ -332,7 +455,48 @@ export const ui = {
     'loading.analyzing': 'Analizowanie twoich danych z AI...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'Świetnie! Twój wskaźnik rebookingu jest już powyżej standardów branżowych. Ustawiliśmy go na 85% dla najdokładniejszego porównania.'
+    'validation.rebookRate.excellent': 'Świetnie! Twój wskaźnik rebookingu jest już powyżej standardów branżowych. Ustawiliśmy go na 85% dla najdokładniejszego porównania.',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': 'Jak Obliczamy Twoje Stracone Przychody',
+    'calc.explanation.intro': 'Nasz algorytm napędzany AI analizuje dane twojego salonu, aby zidentyfikować luki w przychodach:',
+    'calc.explanation.step1': 'Obecne Przychody: Klienci miesięczni × Średnia cena biletu',
+    'calc.explanation.step2': 'Stracone Możliwości: Klienci którzy nie rezerwują ponownie z powodu złego timingu/komunikacji',
+    'calc.explanation.step3': 'Potencjał Odzyskania: Przychody które mógłbyś przechwycić z optymalnym rebookingiem (standard branżowy: 85%)',
+
+    // Solution features
+    'solution.title': 'Jak Moje Rozwiązanie AI Odzyskuje Te Stracone Przychody',
+    'solution.intro': 'Większość salonów traci 15-40% potencjalnych przychodów z powodu słabych systemów rebookingu. Oto jak to naprawiam:',
+    'solution.feature1.title': 'Inteligentne Wykrywanie Slotów',
+    'solution.feature1.desc': 'Moja AI nieustannie monitoruje twój kalendarz, natychmiast identyfikując odwołania w ostatniej chwili i dostępne sloty które pasują do preferencji twoich klientów.',
+    'solution.feature2.title': 'Spersonalizowane Zaproszenia',
+    'solution.feature2.desc': 'AI tworzy spersonalizowane wiadomości dla każdego klienta na podstawie ich historii rezerwacji, preferowanych godzin i usług - wysyłane automatycznie gdy idealne sloty stają się dostępne.',
+    'solution.feature3.title': 'Natychmiastowe Linki Rebookingu',
+    'solution.feature3.desc': 'Klienci otrzymują linki do rezerwacji jednym kliknięciem dla swoich ulubionych slotów czasowych. Bez rozmów telefonicznych, bez przepychanek - tylko natychmiastowe potwierdzenia które wypełniają twój harmonogram.',
+    'solution.feature4.title': 'Docelowe Wyniki',
+    'solution.feature4.desc': 'Na podstawie danych branżowych, naszym celem jest pomóc ci osiągnąć 85% wskaźnik rebookingu i przechwycić stracone przychody pokazane w twoim obliczeniu powyżej.',
+
+    // Pilot program
+    'pilot.title': 'Ekskluzywny Program Pilotażowy',
+    'pilot.intro': 'Uruchamiam program pilotażowy z rewolucyjnymi cenami:',
+    'pilot.feature1': 'Bez opłat miesięcznych - Płać tylko za udany rebooking',
+    'pilot.feature2': 'Bez ryzyka - Płacisz tylko gdy generujemy dla ciebie przychody',
+    'pilot.feature3': 'Dostęp beta - Bądź wśród pierwszych którzy używają najnowocześniejszego AI rebookingu',
+    'pilot.feature4': 'Pełna konfiguracja wliczona - Osobiście skonfiguruję wszystko dla twojego salonu',
+    'pilot.cta': 'Dołącz do listy oczekujących, aby zabezpieczyć swoje miejsce w tym ekskluzywnym programie pilotażowym!',
+
+    // Schedule call
+    'schedule.or': 'Lub',
+    'schedule.cta': 'Zaplanuj Rozmowę ze Mną',
+    
+    // Waitlist section 
+    'waitlist.title': 'Gotowy Przechwycić Te Utracone Przychody?',
+    'waitlist.subtitle': 'Dołącz do naszej listy oczekujących, aby być pierwszym, który dowie się o uruchomieniu naszego rozwiązania rebookingu AI',
+    'waitlist.email.label': 'Adres email',
+    'waitlist.email.placeholder': 'twoj@email.com',
+    'waitlist.email.help': 'Wprowadź swój email, aby dołączyć do naszej ekskluzywnej listy oczekujących',
+    'waitlist.consent': 'Zgadzam się na otrzymywanie aktualizacji o rozwiązaniu rebookingu AI',
+    'waitlist.submit': 'Dołącz do Listy Oczekujących'
   },
   
   ar: {
@@ -416,7 +580,48 @@ export const ui = {
     'loading.analyzing': 'تحليل بياناتك باستخدام الذكاء الاصطناعي...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'ممتاز! معدل إعادة الحجز لديك أعلى من معايير الصناعة. قمنا بتعيينه على 85% للمقارنة الأكثر دقة.'
+    'validation.rebookRate.excellent': 'ممتاز! معدل إعادة الحجز لديك أعلى من معايير الصناعة. قمنا بتعيينه على 85% للمقارنة الأكثر دقة.',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': 'كيف نحسب إيراداتك المفقودة',
+    'calc.explanation.intro': 'خوارزميتنا المدعومة بالذكاء الاصطناعي تحلل بيانات صالونك لتحديد فجوات الإيرادات:',
+    'calc.explanation.step1': 'الإيرادات الحالية: العملاء الشهريون × متوسط سعر التذكرة',
+    'calc.explanation.step2': 'الفرص المفقودة: العملاء الذين لا يعيدون الحجز بسبب التوقيت السيء/التواصل',
+    'calc.explanation.step3': 'إمكانية الاسترداد: الإيرادات التي يمكنك التقاطها مع إعادة الحجز الأمثل (المعيار الصناعي: 85%)',
+
+    // Solution features
+    'solution.title': 'كيف يسترد حلي بالذكاء الاصطناعي هذه الإيرادات المفقودة',
+    'solution.intro': 'معظم الصالونات تفقد 15-40% من الإيرادات المحتملة بسبب أنظمة إعادة الحجز الضعيفة. إليك كيف أحل هذا:',
+    'solution.feature1.title': 'كشف الفترات الذكي',
+    'solution.feature1.desc': 'الذكاء الاصطناعي الخاص بي يراقب تقويمك باستمرار، ويحدد فوراً الإلغاءات في اللحظة الأخيرة والفترات المتاحة التي تتطابق مع تفضيلات عملائك.',
+    'solution.feature2.title': 'دعوات شخصية',
+    'solution.feature2.desc': 'الذكاء الاصطناعي يصنع رسائل شخصية لكل عميل بناء على تاريخ الحجوزات، الأوقات المفضلة، والخدمات - تُرسل تلقائياً عندما تصبح الفترات المثالية متاحة.',
+    'solution.feature3.title': 'روابط إعادة الحجز الفورية',
+    'solution.feature3.desc': 'العملاء يتلقون روابط حجز بنقرة واحدة لفترات أوقاتهم المفضلة. لا مكالمات هاتفية، لا ذهاب وإياب - فقط تأكيدات فورية تملأ جدولك.',
+    'solution.feature4.title': 'النتائج المستهدفة',
+    'solution.feature4.desc': 'بناء على بيانات الصناعة، هدفنا هو مساعدتك في تحقيق معدل إعادة حجز 85% والتقاط الإيرادات المفقودة المظهرة في حسابك أعلاه.',
+
+    // Pilot program
+    'pilot.title': 'برنامج تجريبي حصري',
+    'pilot.intro': 'أطلق برنامجاً تجريبياً بتسعير ثوري:',
+    'pilot.feature1': 'لا رسوم شهرية - ادفع فقط لكل إعادة حجز ناجحة',
+    'pilot.feature2': 'بدون مخاطرة - تدفع فقط عندما نولد إيرادات لك',
+    'pilot.feature3': 'وصول تجريبي - كن من بين الأوائل لاستخدام إعادة الحجز بالذكاء الاصطناعي المتطور',
+    'pilot.feature4': 'الإعداد الكامل مشمول - سأقوم بتكوين كل شيء شخصياً لصالونك',
+    'pilot.cta': 'انضم إلى قائمة الانتظار لتأمين مكانك في هذا البرنامج التجريبي الحصري!',
+
+    // Schedule call
+    'schedule.or': 'أو',
+    'schedule.cta': 'جدول مكالمة معي',
+    
+    // Waitlist section 
+    'waitlist.title': 'مستعد لالتقاط هذه الإيرادات المفقودة؟',
+    'waitlist.subtitle': 'انضم إلى قائمة الانتظار لتكون أول من يعرف عند إطلاق حل إعادة الحجز بالذكاء الاصطناعي',
+    'waitlist.email.label': 'عنوان البريد الإلكتروني',
+    'waitlist.email.placeholder': 'your@email.com',
+    'waitlist.email.help': 'أدخل بريدك الإلكتروني للانضمام إلى قائمة الانتظار الحصرية',
+    'waitlist.consent': 'أوافق على تلقي تحديثات حول حل إعادة الحجز بالذكاء الاصطناعي',
+    'waitlist.submit': 'الانضمام إلى قائمة الانتظار'
   },
   
   ru: {
@@ -500,7 +705,48 @@ export const ui = {
     'loading.analyzing': 'Анализируем ваши данные с помощью ИИ...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'Отлично! Ваш уровень перебронирования уже выше отраслевых стандартов. Мы установили его на 85% для наиболее точного сравнения.'
+    'validation.rebookRate.excellent': 'Отлично! Ваш уровень перебронирования уже выше отраслевых стандартов. Мы установили его на 85% для наиболее точного сравнения.',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': 'Как Мы Рассчитываем Ваши Потерянные Доходы',
+    'calc.explanation.intro': 'Наш алгоритм на основе ИИ анализирует данные вашего салона для выявления пробелов в доходах:',
+    'calc.explanation.step1': 'Текущие Доходы: Месячные клиенты × Средняя цена чека',
+    'calc.explanation.step2': 'Потерянные Возможности: Клиенты, которые не перебронируют из-за плохого тайминга/коммуникации',
+    'calc.explanation.step3': 'Потенциал Восстановления: Доходы, которые вы могли бы получить с оптимальным перебронированием (отраслевой стандарт: 85%)',
+
+    // Solution features
+    'solution.title': 'Как Мое ИИ Решение Восстанавливает Эти Потерянные Доходы',
+    'solution.intro': 'Большинство салонов теряют 15-40% потенциальных доходов из-за плохих систем перебронирования. Вот как я это исправляю:',
+    'solution.feature1.title': 'Умное Определение Слотов',
+    'solution.feature1.desc': 'Мой ИИ постоянно отслеживает ваш календарь, мгновенно выявляя отмены в последнюю минуту и доступные слоты, которые соответствуют предпочтениям ваших клиентов.',
+    'solution.feature2.title': 'Персонализированные Приглашения',
+    'solution.feature2.desc': 'ИИ создает персонализированные сообщения для каждого клиента на основе истории бронирований, предпочитаемого времени и услуг - отправляемые автоматически, когда становятся доступны идеальные слоты.',
+    'solution.feature3.title': 'Мгновенные Ссылки Перебронирования',
+    'solution.feature3.desc': 'Клиенты получают ссылки для бронирования в один клик для их любимых временных слотов. Никаких телефонных звонков, никаких переговоров - только мгновенные подтверждения, которые заполняют ваше расписание.',
+    'solution.feature4.title': 'Целевые Результаты',
+    'solution.feature4.desc': 'Основываясь на отраслевых данных, наша цель - помочь вам достичь 85% уровня перебронирования и получить потерянные доходы, показанные в вашем расчете выше.',
+
+    // Pilot program
+    'pilot.title': 'Эксклюзивная Пилотная Программа',
+    'pilot.intro': 'Я запускаю пилотную программу с революционными ценами:',
+    'pilot.feature1': 'Без ежемесячных платежей - Платите только за успешное перебронирование',
+    'pilot.feature2': 'Без рисков - Вы платите только когда мы генерируем доходы для вас',
+    'pilot.feature3': 'Бета-доступ - Будьте среди первых, кто использует передовое ИИ перебронирование',
+    'pilot.feature4': 'Полная настройка включена - Я лично настрою все для вашего салона',
+    'pilot.cta': 'Присоединяйтесь к списку ожидания, чтобы обеспечить свое место в этой эксклюзивной пилотной программе!',
+
+    // Schedule call
+    'schedule.or': 'Или',
+    'schedule.cta': 'Запланировать Звонок со Мной',
+    
+    // Waitlist section 
+    'waitlist.title': 'Готовы Захватить Эту Потерянную Выручку?',
+    'waitlist.subtitle': 'Присоединяйтесь к нашему списку ожидания, чтобы первыми узнать о запуске нашего ИИ-решения для перебронирования',
+    'waitlist.email.label': 'Адрес электронной почты',
+    'waitlist.email.placeholder': 'ваш@email.com',
+    'waitlist.email.help': 'Введите свой email, чтобы присоединиться к нашему эксклюзивному списку ожидания',
+    'waitlist.consent': 'Я согласен получать обновления о ИИ-решении для перебронирования',
+    'waitlist.submit': 'Присоединиться к Списку Ожидания'
   },
   
   zh: {
@@ -584,7 +830,48 @@ export const ui = {
     'loading.analyzing': '使用AI分析您的数据...',
     
     // Validation messages
-    'validation.rebookRate.excellent': '太棒了！您的重新预约率已经超过行业标准。我们将其设置为85%以进行最准确的比较。'
+    'validation.rebookRate.excellent': '太棒了！您的重新预约率已经超过行业标准。我们将其设置为85%以进行最准确的比较。',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': '我们如何计算您的收入损失',
+    'calc.explanation.intro': '我们的AI驱动算法分析您的沙龙数据以识别收入缺口：',
+    'calc.explanation.step1': '当前收入：月客户数 × 平均客单价',
+    'calc.explanation.step2': '失去的机会：因时机不当/沟通不良而不重新预约的客户',
+    'calc.explanation.step3': '恢复潜力：通过最佳重新预约您可以获得的收入（行业标准：85%）',
+
+    // Solution features
+    'solution.title': '我的AI解决方案如何恢复这些损失的收入',
+    'solution.intro': '大多数沙龙因重新预约系统不佳而损失15-40%的潜在收入。以下是我如何解决这个问题：',
+    'solution.feature1.title': '智能时段检测',
+    'solution.feature1.desc': '我的AI持续监控您的日历，立即识别最后一刻的取消和匹配您客户偏好的可用时段。',
+    'solution.feature2.title': '个性化邀请',
+    'solution.feature2.desc': 'AI根据每位客户的预约历史、偏好时间和服务为他们制作个性化消息 - 当完美时段变得可用时自动发送。',
+    'solution.feature3.title': '即时重新预约链接',
+    'solution.feature3.desc': '客户收到他们喜欢时段的一键预约链接。无需电话，无需来回沟通 - 只需即时确认即可填满您的日程。',
+    'solution.feature4.title': '目标结果',
+    'solution.feature4.desc': '基于行业数据，我们的目标是帮助您实现85%的重新预约率并获得上述计算中显示的损失收入。',
+
+    // Pilot program
+    'pilot.title': '独家试点计划',
+    'pilot.intro': '我正在推出一个革命性定价的试点计划：',
+    'pilot.feature1': '无月费 - 仅按成功重新预约付费',
+    'pilot.feature2': '零风险 - 只有在为您产生收入时才付费',
+    'pilot.feature3': '测试版访问 - 成为首批使用尖端AI重新预约的用户',
+    'pilot.feature4': '包含完整设置 - 我将亲自为您的沙龙配置一切',
+    'pilot.cta': '加入等候名单，确保您在这个独家试点计划中的位置！',
+
+    // Schedule call
+    'schedule.or': '或',
+    'schedule.cta': '与我安排通话',
+    
+    // Waitlist section 
+    'waitlist.title': '准备好捕获这些损失的收入了吗？',
+    'waitlist.subtitle': '加入我们的等候名单，成为第一个知道我们的AI重新预约解决方案何时推出的人',
+    'waitlist.email.label': '电子邮件地址',
+    'waitlist.email.placeholder': '你的@邮箱.com',
+    'waitlist.email.help': '输入您的邮箱以加入我们的专属等候名单',
+    'waitlist.consent': '我同意接收有关AI重新预约解决方案的更新',
+    'waitlist.submit': '加入等候名单'
   },
   
   it: {
@@ -668,7 +955,48 @@ export const ui = {
     'loading.analyzing': 'Analisi dei tuoi dati con IA...',
     
     // Validation messages
-    'validation.rebookRate.excellent': 'Eccellente! Il tuo tasso di ribooking è già sopra gli standard del settore. L\'abbiamo impostato a 85% per il confronto più accurato.'
+    'validation.rebookRate.excellent': 'Eccellente! Il tuo tasso di ribooking è già sopra gli standard del settore. L\'abbiamo impostato a 85% per il confronto più accurato.',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': 'Come Calcoliamo i Tuoi Ricavi Persi',
+    'calc.explanation.intro': 'Il nostro algoritmo potenziato dall\'IA analizza i dati del tuo salone per identificare le lacune nei ricavi:',
+    'calc.explanation.step1': 'Ricavi Attuali: Clienti mensili × Prezzo medio del ticket',
+    'calc.explanation.step2': 'Opportunità Perse: Clienti che non ribookano a causa di timing/comunicazione scarsi',
+    'calc.explanation.step3': 'Potenziale di Recupero: Ricavi che potresti catturare con ribooking ottimale (standard del settore: 85%)',
+
+    // Solution features
+    'solution.title': 'Come La Mia Soluzione IA Recupera Questi Ricavi Persi',
+    'solution.intro': 'La maggior parte dei saloni perde il 15-40% dei ricavi potenziali a causa di sistemi di ribooking scadenti. Ecco come risolvo questo:',
+    'solution.feature1.title': 'Rilevamento Intelligente degli Slot',
+    'solution.feature1.desc': 'La mia IA monitora continuamente il tuo calendario, identificando istantaneamente cancellazioni dell\'ultimo minuto e slot disponibili che corrispondono alle preferenze dei tuoi clienti.',
+    'solution.feature2.title': 'Inviti Personalizzati',
+    'solution.feature2.desc': 'L\'IA crea messaggi personalizzati per ogni cliente basati sulla loro cronologia di prenotazioni, orari preferiti e servizi - inviati automaticamente quando slot perfetti diventano disponibili.',
+    'solution.feature3.title': 'Link di Ribooking Istantaneo',
+    'solution.feature3.desc': 'I clienti ricevono link di prenotazione con un clic per i loro slot temporali preferiti. Nessuna telefonata, nessun andirivieni - solo conferme istantanee che riempiono il tuo programma.',
+    'solution.feature4.title': 'Risultati Target',
+    'solution.feature4.desc': 'Basato sui dati del settore, il nostro obiettivo è aiutarti a raggiungere un tasso di ribooking dell\'85% e catturare i ricavi persi mostrati nel tuo calcolo sopra.',
+
+    // Pilot program
+    'pilot.title': 'Programma Pilota Esclusivo',
+    'pilot.intro': 'Sto lanciando un programma pilota con prezzi rivoluzionari:',
+    'pilot.feature1': 'Nessuna tariffa mensile - Paga solo per ribooking di successo',
+    'pilot.feature2': 'Senza rischi - Paghi solo quando generiamo ricavi per te',
+    'pilot.feature3': 'Accesso beta - Sii tra i primi a utilizzare il ribooking IA all\'avanguardia',
+    'pilot.feature4': 'Configurazione completa inclusa - Configurerò personalmente tutto per il tuo salone',
+    'pilot.cta': 'Unisciti alla lista d\'attesa per assicurarti il tuo posto in questo programma pilota esclusivo!',
+
+    // Schedule call
+    'schedule.or': 'Oppure',
+    'schedule.cta': 'Programma una Chiamata con Me',
+    
+    // Waitlist section 
+    'waitlist.title': 'Pronto a Catturare Questi Ricavi Persi?',
+    'waitlist.subtitle': 'Unisciti alla nostra lista d\'attesa per essere il primo a sapere quando lanceremo la nostra soluzione di ribooking IA',
+    'waitlist.email.label': 'Indirizzo email',
+    'waitlist.email.placeholder': 'tua@email.com',
+    'waitlist.email.help': 'Inserisci la tua email per unirti alla nostra lista d\'attesa esclusiva',
+    'waitlist.consent': 'Accetto di ricevere aggiornamenti sulla soluzione di ribooking IA',
+    'waitlist.submit': 'Unisciti alla Lista d\'Attesa'
   },
   
   ja: {
@@ -752,6 +1080,47 @@ export const ui = {
     'loading.analyzing': 'AIでデータを分析中...',
     
     // Validation messages
-    'validation.rebookRate.excellent': '素晴らしい！あなたの再予約率はすでに業界標準を上回っています。最も正確な比較のために85%に設定しました。'
+    'validation.rebookRate.excellent': '素晴らしい！あなたの再予約率はすでに業界標準を上回っています。最も正確な比較のために85%に設定しました。',
+
+    // New content - Calculation explanation
+    'calc.explanation.title': '失った収益の計算方法',
+    'calc.explanation.intro': '私たちのAI駆動アルゴリズムがあなたのサロンデータを分析し、収益ギャップを特定します：',
+    'calc.explanation.step1': '現在の収益：月間顧客数 × 平均チケット価格',
+    'calc.explanation.step2': '失った機会：タイミング不良/コミュニケーション不足で再予約しない顧客',
+    'calc.explanation.step3': '回復ポテンシャル：最適な再予約で獲得できる収益（業界標準：85%）',
+
+    // Solution features
+    'solution.title': '私のAIソリューションがこれらの失った収益を回復する方法',
+    'solution.intro': 'ほとんどのサロンは貧弱な再予約システムのため潜在収益の15-40%を失っています。これが私の解決策です：',
+    'solution.feature1.title': 'スマートスロット検出',
+    'solution.feature1.desc': '私のAIはあなたのカレンダーを継続的に監視し、直前のキャンセルとあなたの顧客の好みに合う利用可能なスロットを瞬時に特定します。',
+    'solution.feature2.title': 'パーソナライズされた招待',
+    'solution.feature2.desc': 'AIは各顧客の予約履歴、好みの時間、サービスに基づいてパーソナライズされたメッセージを作成し、完璧なスロットが利用可能になったときに自動的に送信します。',
+    'solution.feature3.title': '即座の再予約リンク',
+    'solution.feature3.desc': '顧客はお気に入りの時間スロットのワンクリック予約リンクを受け取ります。電話もやり取りも不要 - あなたのスケジュールを埋める即座の確認だけです。',
+    'solution.feature4.title': 'ターゲット結果',
+    'solution.feature4.desc': '業界データに基づいて、私たちの目標は85%の再予約率を達成し、上記の計算で示された失った収益を獲得するのを支援することです。',
+
+    // Pilot program
+    'pilot.title': '独占パイロットプログラム',
+    'pilot.intro': '革命的な価格でパイロットプログラムを開始します：',
+    'pilot.feature1': '月額料金なし - 成功した再予約のみの支払い',
+    'pilot.feature2': 'リスクフリー - あなたのために収益を生み出したときのみ支払い',
+    'pilot.feature3': 'ベータアクセス - 最先端のAI再予約を最初に使用する方々の仲間入り',
+    'pilot.feature4': '完全セットアップ込み - あなたのサロンのためにすべてを個人的に設定します',
+    'pilot.cta': 'この独占パイロットプログラムでの席を確保するために待機リストに参加してください！',
+
+    // Schedule call
+    'schedule.or': 'または',
+    'schedule.cta': '私と通話をスケジュール',
+    
+    // Waitlist section 
+    'waitlist.title': 'この失った収益を捉える準備はできていますか？',
+    'waitlist.subtitle': 'AI再予約ソリューションがローンチする際に最初に知るために、ウェイトリストにご参加ください',
+    'waitlist.email.label': 'メールアドレス',
+    'waitlist.email.placeholder': 'あなた@email.com',
+    'waitlist.email.help': '限定ウェイトリストに参加するためにメールアドレスを入力してください',
+    'waitlist.consent': 'AI再予約ソリューションのアップデートを受け取ることに同意します',
+    'waitlist.submit': 'ウェイトリストに参加'
   }
 } as const;
